@@ -1,0 +1,110 @@
+<!-- 
+	Html 4 doctype declaration
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+-->
+<!DOCTYPE HTML/>
+<html>
+<head>
+	<title>Tune It</title>
+	<meta charset="utf-8"/>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	
+	<!--Import necessary javascript libraries... -->
+	<script type="text/javascript" src="js/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="js/latexit.js"></script>
+	
+</head>
+
+<body>
+
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="#!">Lokta-Volterra</a></li>
+		<li><a href="#!">Dynamical System 2</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Dynamical System 3</a></li>
+	</ul>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li>
+					<a id="systems_dropdown" class="dropdown-trigger" href="#!" data-target="dropdown1">
+						Systems<i class="material-icons right">arrow_drop_down</i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="row">
+		<div class="col s12">
+			<div class="card ">
+				<div class="card-content white-text">
+				  <span class="card-title">Card Title</span>
+	
+					<!-- Div where the cureve(s) for the dynamical system will be displayed-->
+					<div id="dynamical_sys_display" ></div>	
+				</div>
+			
+	<!-- 
+				<div class="card-action">
+				  <a href="#">This is a link</a>
+				  <a href="#">This is a link</a>
+				</div>
+	 -->
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s3">
+					<input placeholder="Value" id="param0" type="text" class="validate">
+					<label for="param0">
+						<div lang="latex"> \alpha </div>
+					</label>
+				</div>
+				<div class="input-field col s3">
+					<input placeholder="Value" id="param1" type="text" class="validate">
+					<label for="param1">
+						<div lang="latex"> \beta </div>
+					</label>
+				</div>
+				<div class="input-field col s3">
+					<input placeholder="Value" id="param2" type="text" class="validate">
+					<label for="param3">
+						<div lang="latex"> \gamma </div>
+					</label>
+				</div>
+				<div class="input-field col s3">
+					<input placeholder="Value" id="param3" type="text" class="validate">
+					<label for="param3">
+						<div lang="latex"> \delta </div>
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
+		
+	<div class="row">
+		<button class="btn waves-effect waves-light col s2 offset-s5" type="submit" name="action">Submit
+		<i class="material-icons right">send</i>
+		</button>
+	</div>
+	
+	
+
+	<!-- Include the javascript... -->
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
