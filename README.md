@@ -4,7 +4,7 @@
 Clone the repository
 
 ```
-	git clone https://github.com/carterian8/dynamical_systems_rl.git
+git clone https://github.com/carterian8/dynamical_systems_rl.git
 ```
 
 or download the zip.
@@ -16,7 +16,7 @@ python3 -m venv <path_to_env>
 	
 Activate the virtual environment
 ```
-	source <path_to_env>/bin/activate
+source <path_to_env>/bin/activate
 ```
 	
 Install necessary packages:
