@@ -1,0 +1,55 @@
+<!DOCTYPE HTML/>
+<html>
+<head>
+	<title>Tune It</title>
+	<meta charset="utf-8"/>
+	
+	<!-- Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- CSS imports and definitions... -->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<style>
+		html, body, .vertical-horizontal-center-wrapper {
+			height: 100%;
+		}
+	</style>
+	
+	<!-- Import necessary javascript libraries... -->
+	<script type="text/javascript" src="js/plotly-latest.min.js"></script>
+	<script type="text/javascript" src="js/latexit.js"></script>
+	
+</head>
+
+<body>
+	
+	<div class="valign-wrapper row vertical-horizontal-center-wrapper">
+		<div class="col card s11 pull-s1 m6 pull-m3 l4 pull-l4">
+			<form id="difficulty-form" action="index_old.html" method="post">
+				<div class="card-content">
+					<div class="row">
+						<span class="card-title"></span>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="easy">Easy
+						</button>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="medium">Medium
+						</button>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="hard">Hard
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Include the javascript... -->
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

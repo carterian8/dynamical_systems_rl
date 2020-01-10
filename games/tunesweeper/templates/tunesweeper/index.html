@@ -1,0 +1,62 @@
+<!DOCTYPE HTML/>
+<html>
+<head>
+	<title>Tune Sweeper</title>
+	<meta charset="utf-8"/>
+	
+	<!-- Django import of static files -->
+	{% load static %}
+	
+	<!-- Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- CSS imports and definitions (includes Django specific tags)... -->
+	<link type="text/css" rel="stylesheet" href="{% static 'tunesweeper/css/materialize.min.css' %}"  media="screen,projection"/>
+	<style>
+		html, body, .vertical-horizontal-center-wrapper {
+			height: 100%;
+		}
+	</style>
+	
+	<!-- Import javascript (that can be imported in the header)... -->
+	<script type="text/javascript" src="{% static 'tunesweeper/js/plotly-latest.min.js' %}"></script>
+	
+</head>
+
+<body>
+	
+	<div class="valign-wrapper row vertical-horizontal-center-wrapper">
+		<div class="col card s11 pull-s1 m6 pull-m3 l4 pull-l4">
+			<form id="difficulty-form" action="{% url 'tunesweeper:game_interface' %}" method="post">
+			
+				<!-- Django Cross Site Request Forgeries token-->
+				{% csrf_token %}
+				
+				<div class="card-content">
+					<div class="row">
+						<span class="card-title"></span>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="4">Easy
+						</button>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="6">Medium
+						</button>
+					</div>
+					<div class="row">
+						<button class="btn waves-effect waves-light col s10 offset-s1" type="submit" name="difficulty" value="8">Hard
+						</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+
+	<!-- Include additional javascript... -->
+	<script type="text/javascript" src="{% static 'tunesweeper/js/materialize.min.js' %}"></script>
+<!-- 	<script type="text/javascript" src="{% static 'tunesweeper/js/main.js' %}"></script> -->
+
+</body>
+</html>
