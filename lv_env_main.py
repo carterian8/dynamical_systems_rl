@@ -1,11 +1,11 @@
 
 import argparse
-from gym_dsys.envs import LotkaVolterraEnv
-from gym_dsys.envs import OdeEnv
+from dsys.envs import LotkaVolterraEnv
+from dsys.envs import OdeEnv
 from matplotlib import pyplot as plt
 import numpy as np
 import os
-from rl_dsys.agents import generic
+from dsys.agents import generic
 import tensorflow as tf
 import tensorflow_probability as tfp
 

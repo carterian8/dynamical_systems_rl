@@ -1,0 +1,7 @@
+gym
+matplotlib
+numpy
+scipy
+Django
+tensorflow>=2.1
+tensorflow-probability
